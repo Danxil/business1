@@ -10,12 +10,12 @@ $magbook_settings = magbook_get_theme_options();
 if ( !class_exists( 'Jetpack') || class_exists( 'Jetpack') && !Jetpack::is_module_active( 'infinite-scroll' ) ){
 	if ( function_exists('wp_pagenavi' ) ) :
 		wp_pagenavi();
-	else: 
+	else:
 	// Previous/next page navigation.
 		the_posts_pagination( array(
-			'prev_text'          => '<i class="fa fa-angle-double-left"></i><span class="screen-reader-text">' . __( 'Previous page', 'magbook' ).'</span>',
-			'next_text'          => '<i class="fa fa-angle-double-right"></i><span class="screen-reader-text">' . __( 'Next page', 'magbook' ).'</span>',
-			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'magbook' ) . ' </span>',
+			'prev_text'          => '<i class="fa fa-angle-double-left"></i><span class="screen-reader-text">' . __( 'Предидущая страница', 'magbook' ).'</span>',
+			'next_text'          => '<i class="fa fa-angle-double-right"></i><span class="screen-reader-text">' . __( 'Следующая страница', 'magbook' ).'</span>',
+			'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Страница', 'magbook' ) . ' </span>',
 		) );
 	endif;
 }

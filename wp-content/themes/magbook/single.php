@@ -62,9 +62,9 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 							} ?>
 					</header> <!-- end .entry-header -->
 					<div class="entry-content">
-							<?php the_content(); ?>			
+							<?php the_content(); ?>
 					</div><!-- end .entry-content -->
-					<?php wp_link_pages( array( 
+					<?php wp_link_pages( array(
 						'before'            => '<div style="clear: both;"></div><div class="pagination clearfix">'.esc_html__( 'Pages:', 'magbook' ),
 						'after'             => '</div>',
 						'link_before'       => '<span>',
@@ -84,11 +84,11 @@ $magbook_display_page_single_featured_image = $magbook_settings['magbook_display
 							) );
 				} elseif ( is_singular( 'post' ) ) {
 				the_post_navigation( array(
-						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Next', 'magbook' ) . '</span> ' .
-							'<span class="screen-reader-text">' . __( 'Next post:', 'magbook' ) . '</span> ' .
+						'next_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Далее', 'magbook' ) . '</span> ' .
+							'<span class="screen-reader-text">' . __( 'Следующий пост:', 'magbook' ) . '</span> ' .
 							'<span class="post-title">%title</span>',
-						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Previous', 'magbook' ) . '</span> ' .
-							'<span class="screen-reader-text">' . __( 'Previous post:', 'magbook' ) . '</span> ' .
+						'prev_text' => '<span class="meta-nav" aria-hidden="true">' . __( 'Назад', 'magbook' ) . '</span> ' .
+							'<span class="screen-reader-text">' . __( 'Предидущий пост:', 'magbook' ) . '</span> ' .
 							'<span class="post-title">%title</span>',
 					) );
 				}
